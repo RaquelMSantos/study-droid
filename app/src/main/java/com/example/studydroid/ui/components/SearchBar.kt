@@ -4,7 +4,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -18,7 +17,6 @@ import androidx.compose.ui.unit.dp
 import com.example.studydroid.R
 import com.example.studydroid.ui.theme.StudyDroidTheme
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SearchBar(
     modifier: Modifier = Modifier,
@@ -34,9 +32,9 @@ fun SearchBar(
                 contentDescription = null
             )
         },
-        colors = TextFieldDefaults.textFieldColors(
-            unfocusedLabelColor = MaterialTheme.colorScheme.surface,
-            focusedLabelColor = MaterialTheme.colorScheme.surface
+        colors = TextFieldDefaults.colors(
+            unfocusedContainerColor = MaterialTheme.colorScheme.surface,
+            focusedContainerColor = MaterialTheme.colorScheme.surface
         ),
         placeholder = {
             Text(stringResource(R.string.placeholder_search))
