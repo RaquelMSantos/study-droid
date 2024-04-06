@@ -80,7 +80,7 @@ fun CardExpansion(
 
 @Preview(showBackground = true)
 @Composable
-fun CardExpansionPreview() {
+private fun CardExpansionPreview() {
     StudyDroidTheme {
         CardExpansion(
             title = "title",
@@ -93,7 +93,7 @@ fun CardExpansionPreview() {
 
 @Preview(showBackground = true)
 @Composable
-fun CardExpansionExpandedPreview() {
+private fun CardExpansionExpandedPreview() {
     StudyDroidTheme {
         CardExpansion(
             title = "title",

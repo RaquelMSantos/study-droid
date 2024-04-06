@@ -47,7 +47,7 @@ fun SearchBar(
 
 @Preview(showBackground = true)
 @Composable
-fun SearchBarPreview() {
+private fun SearchBarPreview() {
     StudyDroidTheme {
         SearchBar(
             text = "",
