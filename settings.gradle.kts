@@ -15,4 +15,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "Study Droid"
 include(":app")
- 
+include(":domain")
+include(":data")
+include(":core")
+include(":features")
+include(":model")

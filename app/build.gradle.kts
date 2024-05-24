@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.studydroid"
-    compileSdk = 33
+    namespace = "com.rmso.studydroid"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.studydroid"
+        applicationId = "com.rmso.studydroid"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
