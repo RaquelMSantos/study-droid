@@ -34,10 +34,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             StudyDroidTheme {
-                // TODO - extract to common
-                // TODO - to validate use NavigationSuiteScaffold
-                // androidx.compose.material3:material3-adaptive-navigation-suite:1.0.0-alpha05
-                // androidx.compose.material3.adaptive:adaptive-*:1.0.0-alpha10
+                // TODO - to use NavigationSuiteScaffold
                 val windowSizeClass = calculateWindowSizeClass(this)
                 when (windowSizeClass.widthSizeClass) {
                     WindowWidthSizeClass.Compact -> {
